@@ -1,0 +1,448 @@
+/* Legacy icons and condition icons */
+
+/* link icons */
+
+.pops {
+  text-align: center;
+}
+
+.pops.add-photo {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  border: 1px solid #404040;
+}
+
+.pops a {
+  background: url(/images/e/e3/Popup-link.png) center right no-repeat !important;
+  padding-right: 13px !important;
+}
+
+img.pops {
+  box-shadow: 0px 16px 30px -14px rgb(0 0 0 / 50%);
+  border-radius: 4px;
+}
+
+/* list icons */
+#vri {
+  background-image: url("/images/f/f2/Infoicon.png");
+  position: relative;
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vrd {
+  background-image: url("/images/f/fc/RegionIconDn.png");
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vru {
+  background-image: url("/images/b/b1/RegionIconUp.png");
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxm {
+  background-image: url("/images/5/58/Vxmapnx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxd {
+  background-image: url("/images/6/67/Vxmaprx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxs {
+  background-image: url("/images/6/69/Vxtopox.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxi {
+  background-image: url("/images/8/89/Vxinfnx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxn {
+  background-image: url("/images/1/10/Vxinfxx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxp {
+  background-image: url("/images/c/c9/Vxpicnx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vx2 {
+  background-image: url("/images/1/1f/Vx2wdnx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxH {
+  background-image: url("/images/0/09/VxHighClearance.png");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 2px;
+  margin-bottom: -2px;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vx4 {
+  background-image: url("/images/4/40/Vx4wdnx.png");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 2px;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxc {
+  background-image: url("/images/3/34/Vx2cars.png");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 2px;
+  margin-bottom: 0px;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxw {
+  background-image: url("/images/9/99/Vxwater.png");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-color: transparent !important;
+  margin: 2px;
+  margin-top: 4px;
+  vertical-align: middle;
+}
+
+#vxe {
+  background-image: url("/images/f/f5/Vxmapxx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#vxx {
+  background-image: url("/images/8/87/Vxx.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.monthv {
+  display: none;
+}
+
+/* condition icons */
+
+/* smiley */
+#cs0 {
+  background-image: url("/images/d/d9/Smiley0.png");
+  width: 18px;
+  height: 18px;
+}
+
+#cs1 {
+  background-image: url("/images/a/ab/Smiley1.png");
+  width: 18px;
+  height: 18px;
+}
+
+#cs2 {
+  background-image: url("/images/0/0d/Smiley2.png");
+  width: 18px;
+  height: 18px;
+}
+
+#cs3 {
+  background-image: url("/images/6/62/Smiley3.png");
+  width: 18px;
+  height: 18px;
+}
+
+#cs4 {
+  background-image: url("/images/f/f1/Smiley4.png");
+  width: 18px;
+  height: 18px;
+}
+
+#cs5 {
+  background-image: url("/images/9/9d/Smiley5.png");
+  width: 18px;
+  height: 18px;
+}
+
+/* waterflow */
+#cw0 {
+  background-image: url("/images/5/58/Waterflow0.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cw1 {
+  background-image: url("/images/4/47/Waterflow1.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cw2 {
+  background-image: url("/images/5/5a/Waterflow2.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cw3 {
+  background-image: url("/images/4/45/Waterflow3.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cw4 {
+  background-image: url("/images/d/d5/Waterflow4.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cw5 {
+  background-image: url("/images/e/e3/Waterflow5.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwA,
+#cwa1 {
+  background-image: url("/images/b/b1/WaterflowA.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwB,
+#cwa2,
+#cwa2p {
+  background-image: url("/images/1/16/WaterflowB.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwC0 {
+  background-image: url("/images/7/79/WaterflowC0.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwCB,
+#cwa3 {
+  background-image: url("/images/f/fc/WaterflowC%C2%BD.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwC1,
+#cwa4,
+#cwa4p {
+  background-image: url("/images/2/29/WaterflowC1.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwC2,
+#cwa5 {
+  background-image: url("/images/3/31/WaterflowC2.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwC3,
+#cwa6 {
+  background-image: url("/images/6/60/WaterflowC3.png");
+  width: 16px;
+  height: 16px;
+}
+
+#cwC4,
+#cwa7 {
+  background-image: url("/images/e/e6/WaterflowC4.png");
+  width: 16px;
+  height: 16px;
+}
+
+/* wetsuit */
+#ct0,
+#ct0mm {
+  background-image: url("/images/3/3a/Wetsuit0.png");
+  width: 16px;
+  height: 19px;
+}
+
+#ct1,
+#ct1mm {
+  background-image: url("/images/2/28/Wetsuit1.png");
+  width: 16px;
+  height: 19px;
+}
+
+#ct2,
+#ct3mm {
+  background-image: url("/images/f/f4/Wetsuit2.png");
+  width: 16px;
+  height: 19px;
+}
+
+#ct3,
+#ct5mm {
+  background-image: url("/images/3/38/Wetsuit3.png");
+  width: 16px;
+  height: 19px;
+}
+
+#ct4,
+#ct7mm {
+  background-image: url("/images/d/dd/Wetsuit4.png");
+  width: 16px;
+  height: 19px;
+}
+
+#ct5,
+#ctXmm {
+  background-image: url("/images/1/14/Wetsuit5.png");
+  width: 16px;
+  height: 19px;
+}
+
+/* danger level */
+#cd0 {
+  width: 1px;
+  height: 1px;
+}
+
+#cd1 {
+  width: 1px;
+  height: 1px;
+}
+
+#cd2 {
+  width: 1px;
+  height: 1px;
+}
+
+#cd3 {
+  background-image: url("/images/3/3e/Danger3.png");
+  width: 17px;
+  height: 16px;
+}
+
+#cd4 {
+  background-image: url("/images/7/7d/Danger4.png");
+  width: 17px;
+  height: 16px;
+}
+
+#cd5 {
+  background-image: url("/images/a/a8/Danger5.png");
+  width: 17px;
+  height: 16px;
+}

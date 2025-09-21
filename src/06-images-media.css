@@ -1,0 +1,92 @@
+/* Image and media styles */
+
+p img {
+  max-width: 100%;
+  height: auto;
+} /* your typical images on a page, to fit on mobile */
+
+img.nearestpics-thumb {
+  height: 150px !important;
+  width: auto !important;
+  padding: 2px 0 0 0;
+}
+
+#picture-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#picture-list div {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#picture-list .thumbinner {
+  border-radius: 4px;
+}
+
+.thumbinner {
+  width: auto !important;
+  max-width: 200px;
+}
+
+.thumbinner img {
+  width: 100% !important;
+  height: auto;
+  max-width: none; /* Ensure that max-width is overridden */
+}
+
+.gallerybox.nearestpics {
+  margin: 4px;
+}
+
+#referencepic .thumbinner {
+  width: auto !important;
+}
+img.thumbimage {
+  border: none;
+  padding-right: 0px;
+}
+#referencepic .thumbcaption {
+  width: 265px;
+}
+#referencepic li.gallerybox {
+  margin-bottom: 6px;
+}
+
+@media screen {
+  li.gallerybox {
+    display: inline-block;
+  }
+}
+
+#picturesdiv img {
+  margin-left: -6px;
+}
+
+div.thumb {
+  border-radius: 4px;
+}
+
+/* avoid image being bigger than 100% width */
+.gallerybox,
+.thumb {
+  max-width: 100% !important;
+  height: auto !important;
+}
+iframe,
+.embedvideo {
+  max-width: 100% !important;
+}
+
+/* resize banner image to make it smaller*/
+.tablecanyon .image img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 290px !important;
+  max-height: 300px !important;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,207 @@
+/* Rating and star system styles */
+
+th.star-rating {
+  font-family: sans-serif;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  text-align: right !important;
+  padding-right: 4.5px;
+  padding-top: 4px;
+}
+
+.starRate {
+  position: relative;
+  margin-top: 6px;
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
+.starRate .starRate0 {
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(/skins/common/images/GoldStar0.png) left top;
+}
+.starRate .starRate1 {
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(/skins/common/images/GoldStar1.png) left top;
+}
+.starRate .starRate2 {
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(/skins/common/images/GoldStar2.png) left top;
+}
+.starRate .starRate3 {
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(/skins/common/images/GoldStar3.png) left top;
+}
+.starRate .starRate4 {
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(/skins/common/images/GoldStar4.png) left top;
+}
+.starRate b:hover {
+  background: url(/skins/common/images/RedStar.png) left top;
+}
+.starText {
+  display: none;
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  white-space: nowrap;
+  font-weight: normal;
+}
+.starRate b:hover .starText {
+  display: inline-block;
+}
+.starRate p {
+  display: flex;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.starRate .autoedit .autoedit-trigger {
+  display: inline;
+}
+.starRate .autoedit .autoedit-result {
+  display: none;
+}
+
+span.voted,
+span.notvoted {
+  bottom: 5px;
+  position: relative;
+}
+
+.votebutton {
+  position: relative;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  line-height: normal;
+}
+
+.votebutton button {
+  font-size: 0px !important;
+  background: url(/skins/common/images/RedStar.png) center right no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.votebutton.hasrated {
+  background-image: url("/images/c/cb/Hasrated.png");
+  width: 24px;
+  height: 18px;
+  bottom: -4px;
+}
+
+.votebutton.hasnotrated {
+  background-image: url("/images/1/15/Needstorate.png");
+  width: 30px;
+  height: 18px;
+  bottom: -5px;
+}
+
+.votebutton.hasnotrated button {
+  background: none;
+  border-style: none;
+  box-shadow: none;
+  width: 30px;
+  height: 20px;
+}
+
+.voted * {
+  color: #22aa22 !important;
+}
+
+.votedrow {
+  background-color: #abe0ab;
+}
+
+.votedsub .starsub {
+  color: #22ca22;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.starsub {
+  font-size: 60%;
+  vertical-align: sub;
+}
+
+.starvText {
+  font-size: 12px;
+}
+
+.starx {
+  font-size: 14px !important;
+}
+.starx b:hover .starText {
+  left: 0;
+  top: 16px;
+  width: 100%;
+  text-align: left;
+}
+
+/* star sizes */
+.stable img {
+  height: 12px;
+  width: 12px;
+}
+
+.sshow img {
+  height: 18px;
+  width: 18px;
+}
+
+.starRatingUserCell {
+  white-space: nowrap;
+  display: flex;
+}
+
+.starRatingUser {
+  max-width: 160px;
+  overflow: hidden;
+}
+
+.VIP {
+  background-color: red;
+  color: yellow;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 1px 4px 1px 4px;
+  margin: 0 4px 0 auto;
+  position: relative;
+  left: 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.VIP::after {
+  content: "After 100 ratings a user's score doubles in weight.";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+.VIP:hover::after {
+  opacity: 1;
+}

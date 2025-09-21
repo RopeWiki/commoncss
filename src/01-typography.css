@@ -1,0 +1,21 @@
+/* Typography styles */
+
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in iOS condition reports and landscape mode, while allowing user zoom */
+}
+
+.mw-body h1,
+h2 {
+  font-family: "Avenir Next Condensed" /*iOS*/, Tahoma /*Desktop*/,
+    "Open Sans Condensed" /*Android*/, sans-serif !important;
+  font-weight: bold;
+  color: #005189;
+}
+
+span.understate {
+  font-weight: normal;
+}
+
+th {
+  text-transform: capitalize;
+}

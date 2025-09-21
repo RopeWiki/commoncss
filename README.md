@@ -1,2 +1,2 @@
 # commoncss
-Generated MediaWiki:Common.css
+Generates MediaWiki:Common.css

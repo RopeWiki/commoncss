@@ -1,0 +1,417 @@
+/* Map controls and interactions */
+
+/* scrollbar styling */
+/* Works on Firefox */
+div.controls,
+div.map-control {
+  scrollbar-width: thin;
+  scrollbar-color: #e6e6e6 #a6a6a6;
+}
+
+/* Works on Chrome, Edge, and Safari */
+div.controls::-webkit-scrollbar,
+div.map-control::-webkit-scrollbar {
+  width: 6px;
+}
+
+div.controls::-webkit-scrollbar-track,
+div.map-control::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+
+div.controls::-webkit-scrollbar-thumb,
+div.map-control::-webkit-scrollbar-thumb {
+  background-color: #a6a6a6;
+  border-radius: 20px;
+  border: 1px solid #a6a6a6;
+}
+
+/*fullscreen control*/
+.controls {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  margin: 6px;
+  padding: 2px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  box-sizing: border-box;
+}
+
+.controls.fullscreen-control {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.controls.fullscreen-control.icon {
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0;
+  padding: 0;
+  margin: -2px;
+  height: 6px;
+  width: 6px;
+  position: absolute;
+}
+
+.controls.fullscreen-control:hover * {
+  /*this needs to be below the above style tag for it to work correctly*/
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.controls.fullscreen-control.icon.top-left {
+  border-width: 2px 0 0 2px;
+  top: 11px;
+  left: 11px;
+}
+
+.controls.fullscreen-control.is-fullscreen .icon.top-left {
+  border-width: 0 2px 2px 0;
+}
+
+.controls.fullscreen-control.icon.top-right {
+  border-width: 2px 2px 0 0;
+  right: 11px;
+  top: 11px;
+}
+
+.controls.fullscreen-control.is-fullscreen .icon.top-right {
+  border-width: 0 0 2px 2px;
+}
+
+.controls.fullscreen-control.icon.bottom-left {
+  border-width: 0 0 2px 2px;
+  bottom: 11px;
+  left: 11px;
+}
+
+.controls.fullscreen-control.is-fullscreen .icon.bottom-left {
+  border-width: 2px 2px 0 0;
+}
+
+.controls.fullscreen-control.icon.bottom-right {
+  border-width: 0 2px 2px 0;
+  bottom: 11px;
+  right: 11px;
+}
+
+.controls.fullscreen-control.is-fullscreen .icon.bottom-right {
+  border-width: 2px 0 0 2px;
+}
+
+.controls.currentposition-control {
+  padding-top: 3px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.controls.currentposition-control:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.controls.currentposition-control.enabled {
+  color: rgba(0, 127, 255);
+}
+
+.controls.show-kml-checkbox {
+  display: none;
+  font-size: 12px;
+  font-weight: 500;
+  width: 112px;
+  height: 21px;
+  margin-top: 11px;
+  padding-left: 18px;
+  line-height: 14px;
+}
+
+.controls.show-kml-checkbox input {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+}
+
+#mapbox {
+  min-height: 134px;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* mapbox base layer selection dropdown control */
+.map-control {
+  color: rgb(25, 25, 25);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 38px;
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.map-control:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.map-control.dropdown.selection:hover {
+  background-color: rgba(240, 240, 240);
+}
+
+.map-control.dropdown.selection {
+  direction: ltr;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  color: black;
+  background-color: white;
+  min-width: 115px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  border: 2px solid #fff;
+  border-radius: 3px;
+  border-image: initial;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  z-index: 1002;
+}
+
+.map-control.dropdown.selection-text {
+  /*this is the text in the box at the top showing the current selection*/
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.map-control.dropdown.arrow {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-top: 17px;
+  width: 7px;
+  height: 4px;
+  float: right;
+  pointer-events: none;
+}
+
+.map-control.dropdown.items-list {
+  background-color: white;
+  padding-top: 2px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-color: rgb(113, 123, 135);
+  border-top-color: rgb(113, 123, 135);
+  border-left-color: rgb(113, 123, 135);
+  border-image: initial;
+  border-bottom-width: 0px;
+  border-bottom-style: initial;
+  border-bottom-color: initial;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+  position: relative;
+  text-align: left;
+  display: none;
+  width: 130px;
+  z-index: 1001;
+}
+
+.map-control.dropdown.item {
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+}
+
+.map-control.dropdown.item.selected {
+  font-weight: bold;
+}
+
+.map-control.dropdown.checkbox {
+  padding-left: 2px;
+  padding-right: 5px;
+}
+
+.map-control.dropdown.separator {
+  margin: 0px;
+}
+
+.map-control.dropdown.item:hover,
+.map-control.dropdown.checkbox:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+/* track-source dropdown control */
+.map-control.dropdown.track-source {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+
+.map-control.dropdown.track-source.selection {
+  white-space: nowrap;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  width: 140px;
+}
+
+.map-control.dropdown.track-source.selection-text {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.map-control.dropdown.track-source.arrow {
+  margin-top: 8px;
+  position: absolute;
+  right: 0px;
+}
+
+.map-control.dropdown.track-source.items-list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 155px;
+  -moz-box-shadow: inset 0 -8px 8px -8px #696868;
+  -webkit-box-shadow: inset 0 -8px 8px -8px #696868;
+  box-shadow: inset 0 -8px 8px -8px #696868;
+}
+
+.map-control.dropdown.track-source.item {
+  margin: 0px;
+}
+
+.map-control.dropdown.track-source.item.noextraction {
+  color: red;
+}
+
+/* search map control */
+.map-control.dropdown.selection.searchmap {
+  margin-bottom: 10px;
+}
+
+/* legend box */
+#legend-outer {
+}
+
+.controls.legend {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: left;
+  width: auto;
+  height: auto;
+  max-height: calc(100% - 94px);
+  margin-right: 10px;
+  margin-bottom: 14px;
+  overflow: auto;
+  z-index: 999;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.controls.legend label {
+  font-size: 12px;
+  font-weight: 600;
+  padding-right: 6px;
+  position: relative;
+  bottom: 2px;
+}
+
+.controls.legend.condense {
+  width: 22px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 14px;
+  overflow: initial;
+  float: right;
+  margin: 0px;
+}
+
+#legendbar ul {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#legendbar li {
+  font-size: 10px;
+  margin: -2px;
+  padding: 0px;
+  padding-right: 5px;
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  height: 16px;
+}
+#legendbar a {
+  text-decoration: none;
+}
+#legend {
+  margin-top: 4px;
+}
+
+.legend-icon {
+  vertical-align: text-top;
+  padding: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  object-fit: contain;
+  height: 16px;
+  width: 16px;
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  border-bottom: 6px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -15px; /* apply negative top and left margins to truly center the element */
+
+  z-index: 2147483647;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tipsy {
+  /* this has something to do with the multimedia viewer. it was showing up in the upper left of the page */
+  visibility: hidden !important;
+}

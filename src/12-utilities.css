@@ -1,0 +1,214 @@
+/* Utility classes and common elements */
+
+.rwwarning * {
+  background-color: yellow;
+}
+.rwwarningbox {
+  background-color: yellow;
+  border: 1px solid #808080;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+}
+.rwwarningbox.shadowed {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.message-box {
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+table.message-box {
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+table.message-box td:first-child {
+  white-space: nowrap;
+}
+
+table.message-box td:last-child {
+  padding-left: 0.5em;
+  vertical-align: top;
+}
+
+table.message-box td:first-child span::before {
+  position: relative;
+  top: -2px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.3em;
+}
+
+.alert-message {
+  background-color: var(--background-color-error-subtle, #ffe9e5);
+  color: var(--color-base, #202122);
+  border: 1px var(--border-color-error, #9f3526) solid;
+}
+
+table.alert-message {
+  border: 1px solid #9f3526;
+  background-color: #ffe9e5;
+  color: #202122;
+}
+
+table.alert-message td:first-child span::before {
+  background-image: url("/images/c/cb/Warning.png");
+}
+
+.warning-message {
+  background-color: var(--background-color-error-subtle, #fff9e5);
+  color: var(--color-base, #202122);
+  border: 1px var(--border-color-error, #9f8a26) solid;
+}
+
+table.warning-message {
+  border: 1px solid #9f8a26;
+  background-color: #fff9e5;
+  color: #202122;
+}
+
+table.warning-message td:first-child span::before {
+  background-image: url("/images/2/2d/Warning_orange.png");
+}
+
+.info-message {
+  background-color: var(--background-color-error-subtle, #f0f5e1);
+  color: var(--color-base, #202122);
+  border: 1px var(--border-color-error, #556b2f) solid;
+}
+
+table.info-message {
+  border: 1px solid #556b2f;
+  background-color: #f0f5e1;
+  color: #202122;
+}
+
+table.info-message td:first-child span::before {
+  background-image: url("/images/b/b3/Info.png");
+}
+
+table.pnw-message td:first-child span::before {
+  width: 50px;
+  height: 50px;
+  background-image: url("/images/a/ae/Pnw_120.png");
+}
+
+.anchor-note {
+  background-color: aliceblue;
+}
+
+.popforms * {
+  color: red !important;
+}
+
+/* rules to allow cut&past of coordinates*/
+.textselect {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -khtml-user-select: text !important;
+  -ms-user-select: text !important;
+  -user-select: text !important;
+}
+
+/* prevent problems with long urls */
+a {
+  max-width: 30em !important;
+  word-wrap: break-word;
+  /*overflow-wrap: break-word !important; 
+-ms-word-break: break-word !important; 
+word-break: break-word !important; 
+*/
+}
+
+.client-nojs .smwttcontent {
+  font-size: 0.7em;
+}
+
+.client-nojs .smwttcontent:before {
+  content: " (";
+}
+.client-nojs .smwttcontent:after {
+  content: ")";
+}
+
+.prediv {
+  border-style: solid;
+  color: black;
+  border-width: 1px;
+  white-space: pre;
+  font-family: monospace;
+}
+
+/* remove the external link indicator */
+#content a.external {
+  background: none !important;
+  padding: 0 !important;
+}
+
+/* style links like buttons */
+.button-link {
+  -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #3d94f6),
+    color-stop(1, #1e62d0)
+  );
+  background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+  background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+  background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+  background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+  background-color: #3d94f6;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
+}
+.button-link:active {
+  position: relative;
+  top: 1px;
+}
+.button-link:visited {
+  color: #ffffff;
+}
+
+/* avoid google translate tooltips */
+.goog-tooltip {
+  display: none !important;
+}
+.goog-tooltip:hover {
+  display: none !important;
+}
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* used to highlight "yes" answers in incident reports */
+.incident-highlight-Yes {
+  background-color: #f6b26b;
+}

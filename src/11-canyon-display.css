@@ -1,0 +1,351 @@
+/* Canyon display and permit styles */
+
+.canyon-popup-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#legend {
+  background-color: rgba(255, 255, 255, 0.82);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+#firstHeading.Permit::before {
+  margin-right: 0px;
+  position: relative;
+  bottom: -2px;
+  width: 34px;
+  height: 30px;
+  background-size: 34px 34px;
+  display: inline-block;
+  content: "";
+}
+
+#firstHeading.Permit::after {
+  content: "";
+  position: relative;
+  height: 8px;
+  top: 0px;
+  display: block;
+  clear: both;
+}
+
+#firstHeading.Permit.Yes::before {
+  background-image: url(/images/2/29/Permit-yes.png);
+}
+#firstHeading.Permit.Restricted::before {
+  background-image: url(/images/1/11/Permit-restricted.png);
+}
+#firstHeading.Permit.Closed::before {
+  background-image: url(/images/f/f8/Permit-closed.png);
+}
+
+#firstHeading.Permit.Yes::after {
+  background-color: #edea34;
+}
+#firstHeading.Permit.Restricted::after {
+  background-color: #f7a94a;
+}
+#firstHeading.Permit.Closed::after {
+  background-color: #ed3434;
+}
+
+#firstHeading.unexplored::before {
+  content: url(/images/9/9b/Unexplored.png);
+  margin-right: 6px;
+  position: relative;
+  bottom: -2px;
+}
+
+.firstHeadingTooltip {
+  width: 34px;
+  height: 36px;
+  display: inline-block;
+  position: relative;
+  margin-left: -34px;
+  margin-bottom: -7px;
+}
+
+.overallrating-header {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.overallrating {
+  line-height: 16px;
+}
+
+.detailsTable {
+  position: relative;
+  left: -74px;
+  display: table-caption; /*this is to fix alignment*/
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.detailsTable th span {
+  display: inline-block;
+  width: 64px;
+}
+
+.detailsTable td {
+  border-bottom: 1px dashed #d8d8d8;
+}
+
+tr.overall > td {
+  /* background-color: #e8e8e8; */
+  border-bottom: gainsboro 2px solid;
+}
+
+th.subheader {
+  font-weight: normal;
+}
+
+.aka-names {
+  display: block;
+  position: relative;
+  top: -20px;
+  margin-left: 4px;
+  margin-bottom: -12px;
+}
+
+/* this sets the style of the canyon header bar, based on permit status */
+.permit {
+  background-color: #a7d7f9;
+  color: #0645ad;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.permit a {
+  padding-left: 8px;
+}
+.permit.No {
+} /* same as default style (.permit) */
+.permit.Yes {
+  background-color: #edea34;
+}
+.permit.Restricted {
+  background-color: #f7a94a;
+}
+.permit.Closed,
+.permit.Closed a {
+  background-color: #ed3434;
+  color: #e6eff5;
+}
+.permit.unexplored {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.permit big {
+  margin: auto;
+  display: block;
+  width: 240px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.permiticon {
+  width: 18px;
+  vertical-align: sub;
+  margin-left: -3px;
+}
+
+.permit-ul {
+  text-decoration-thickness: 4px;
+  text-decoration-skip-ink: none;
+  text-decoration-skip: none;
+}
+.permit-ul.No {
+  text-decoration: none;
+}
+.permit-ul.Yes {
+  text-decoration-color: #edea34;
+}
+.permit-ul.Restricted {
+  text-decoration-color: #f7a94a;
+}
+.permit-ul.Closed {
+  text-decoration-color: #ed3434;
+}
+
+.rating-tr {
+  position: relative;
+  left: -12px;
+  top: 4px;
+}
+
+/* this sets the styling of the "Details" section in the canyon right sidebar */
+.detailsRow {
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.detailsRow pre {
+  white-space: normal;
+}
+
+.detailsRow.detailsRowDescriptor {
+  font-weight: bold;
+  text-align: right;
+  left: -87px;
+  width: 80px;
+  position: absolute;
+}
+
+.tablecanyon {
+  width: 310px;
+  font-size: 90%;
+  border: 1.5px solid rgba(0, 80, 138, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #eef1f5;
+  color: black;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  padding: 0.2em;
+  text-align: left;
+}
+
+.tablecanyon th {
+  text-align: right;
+  width: 80px;
+  padding-right: 4px;
+}
+
+tr.spaceUnder > td {
+  padding-bottom: 0.75em;
+}
+
+.metric-chk {
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  z-index: 1;
+}
+
+.tableregion {
+  top: 0px;
+  width: 320px;
+  font-size: 90%;
+  border: 1.5px solid rgba(0, 80, 138, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #eef1f5;
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 1em;
+  padding: 0.2em;
+  text-align: left;
+}
+
+.kmldisplay {
+  margin-bottom: 32px;
+}
+
+.kmlmapdisplay {
+  margin-bottom: 2px;
+}
+
+.canyondisplay {
+  width: 100%;
+  border: 1px solid rgba(0, 80, 138, 0.75);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  padding: 1px;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.canyondisplay-thumbnail {
+  width: 300px;
+  height: 300px;
+  overflow: visible;
+}
+
+.canyondisplay-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.floatright.userlist {
+  padding-top: 22px;
+}
+
+.regionheader {
+  text-align: center;
+  background-color: #ccccff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#loctabledata {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-collapse: initial;
+  border-radius: 6px;
+  border: none;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+}
+
+#loctabledata th.rwHdr,
+#loctabledata tr.trow > td {
+  border: none;
+  border-top: 1px #aaa solid;
+  border-left: 1px #aaa solid;
+}
+
+#loctabledata th.rwHdr:last-of-type,
+#loctabledata tr.trow > td:last-of-type {
+  border-right: 1px #aaa solid;
+}
+
+#loctabledata tr.trow:last-of-type > td {
+  border-bottom: 1px #aaa solid;
+}
+
+#loctabledata th.rwHdr:first-of-type {
+  border-top-left-radius: 6px;
+}
+
+#loctabledata th.rwHdr:last-of-type {
+  border-top-right-radius: 6px;
+}
+
+#loctabledata tr.trow:last-of-type > td:first-of-type {
+  border-bottom-left-radius: 6px;
+}
+
+#loctabledata tr.trow:last-of-type > td:last-of-type {
+  border-bottom-right-radius: 6px;
+}
+
+/* dynamic region menu for forms */
+#setfieldmenu {
+  display: none;
+  position: absolute;
+  left: 0em;
+  top: 0em;
+  background-color: white;
+}
+#setfieldtarget:hover #setfieldmenu {
+  display: block;
+}
+.setfield {
+  cursor: pointer;
+}
