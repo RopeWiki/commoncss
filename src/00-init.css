@@ -1,2 +1,4 @@
-/*needs to be first line to load font*/
+/* This is imported by MediaWiki:Common.css */
+
+/* Google fonts needs to be first line to (for some reason) */
 @import url("//fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;700;800&display=swap");
