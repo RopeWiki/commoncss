@@ -40,22 +40,7 @@ See https://github.com/RopeWiki/commoncss/ for details of how this file is gener
 Please don't edit this file directly - it will be automatically overwritten.
 
 The original monolithic file has been broken down into smaller, more manageable modules.
-Content has been moved to the following files:
-
- * 01-typography.css - Font and heading styles
- * 02-layout.css - Basic layout and structural styles
- * 03-tables.css - Table styling
- * 04-forms-inputs.css - Form and input controls
- * 05-modals-popups.css - Modal and popup styles
- * 06-images-media.css - Image and media handling
- * 07-navigation-ui.css - Navigation and UI elements
- * 08-ratings-stars.css - Rating and star system
- * 09-maps-controls.css - Map controls and interactions
- * 10-conditions-weather.css - Conditions and weather styles
- * 11-canyon-display.css - Canyon display and permit styles
- * 12-utilities.css - Utility classes and common elements
- * 13-responsive.css - Responsive design and mobile styles
- * 14-icons-legacy.css - Legacy icons and condition icons
+Content has been moved to the following files.
 
 To add new styles, create them in the appropriate module file.
 To build the final common.css, run: python3 build.py
