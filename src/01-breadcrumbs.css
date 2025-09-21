@@ -1,0 +1,68 @@
+/* This is imported by MediaWiki:Common.css */
+
+.breadcrumb-container {
+  margin-top: -30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  /* Scroll to right on load */
+  direction: rtl;
+  text-overflow: ellipsis;
+}
+
+/* Convert UL to horizontal breadcrumb display */
+.breadcrumb-list,
+ul.breadcrumb-trail {
+  list-style: none;
+  margin: revert !important;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center;
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.4;
+  white-space: nowrap;
+  /* Reset direction back to normal */
+  direction: ltr;
+  min-width: max-content; /* Ensure full width for scrolling */
+}
+
+/* Make list items display inline */
+.breadcrumb-list li,
+ul.breadcrumb-trail li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  flex-shrink: 0; /* Prevent items from shrinking */
+  white-space: nowrap;
+}
+
+/* Style the links */
+.breadcrumb-list li a,
+ul.breadcrumb-trail li a,
+.breadcrumb-list li a:visited,
+ul.breadcrumb-trail li a:visited {
+  color: #332d75;
+  text-decoration: none;
+  padding: 4px 6px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.breadcrumb-list li a:hover,
+ul.breadcrumb-trail li a:hover {
+  background-color: #f8f9fa;
+  text-decoration: underline;
+}
+
+/* Add breadcrumb separators between items */
+.breadcrumb-list li:not(:last-child)::after,
+ul.breadcrumb-trail li:not(:last-child)::after {
+  content: " › ";
+  color: #a2a9b1;
+  margin: 0 1px;
+  font-weight: normal;
+  pointer-events: none;
+}

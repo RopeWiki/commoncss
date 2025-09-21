@@ -14,3 +14,4 @@ To build the final common.css, run: python3 build.py
 
 
 @import url("/MediaWiki:Common-00-original.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-01-breadcrumbs.css?action=raw&ctype=text/css");
