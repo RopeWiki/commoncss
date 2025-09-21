@@ -1,6 +1,9 @@
 /* This is imported by MediaWiki:Common.css */
 /* Typography styles */
 
+/* Google fonts needs to be first line to (for some reason) */
+@import url("//fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;700;800&display=swap");
+
 html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in iOS condition reports and landscape mode, while allowing user zoom */
 }

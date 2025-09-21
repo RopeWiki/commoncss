@@ -30,8 +30,8 @@ img.nearestpics-thumb {
 }
 
 .thumbinner {
-  width: auto !important;
-  max-width: 200px;
+  /* width: auto !important; */
+  /* max-width: 200px; */
 }
 
 .thumbinner img {
