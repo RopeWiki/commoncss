@@ -1,0 +1,263 @@
+/* This is imported by MediaWiki:Common.css */
+
+@media only screen and (max-width: 1200px) {
+
+    /* hide side panel */
+    #left-navigation,
+    #footer,
+    div#footer,
+    .mw-body,
+    #mw-head-base,
+    .suggestions {
+        margin-left: 0px !important;
+    }
+
+    #p-personal ul {
+        padding-left: 0px !important;
+    }
+
+    body,
+    .mw-body,
+    .mw-page-base {
+        width: auto !important;
+    }
+
+    /* new dynamic menu */
+    #mw-panel {
+        float: left;
+        display: block;
+        z-index: 99999 !important;
+        border: 1px solid #ffffff !important;
+    }
+
+    #p-logo a {
+        background-size: contain !important;
+        width: 32px !important;
+        height: 32px !important;
+        background-image: url(/images/8/8a/RopewikiMenu.png) !important;
+        pointer-events: none;
+    }
+
+    #p-logo {
+        width: 32px !important;
+        height: 32px !important;
+        top: -30px !important;
+    }
+
+    div#mw-panel {
+        top: 32px !important;
+        padding: 0px !important;
+    }
+
+    #p-navigation-label::before {
+        content: url(/Ropewiki.png) !important;
+    }
+
+    #p-navigation-label {
+        display: block !important;
+    }
+
+    .portal {
+        display: none !important;
+        background-color: #e6e6e6 !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    #mw-panel:hover .portal {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* dynamic waterflow providers table */
+    .wftablebody {
+        display: none;
+    }
+
+    .wftableheader td:after {
+        vertical-align: middle !important;
+        content: url(/skins/Vector/images/arrow-down-icon.png) !important;
+        height: 16px;
+        display: block;
+    }
+
+    .wftableheaderbody:hover .wftablebody {
+        display: table-row-group
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* dynamic region summary table */
+    .tablebody {
+        display: none;
+    }
+
+    .tableheader td:after {
+        vertical-align: middle !important;
+        content: url(/skins/Vector/images/arrow-down-icon.png) !important;
+    }
+
+    .tableregion:hover .tablebody {
+        display: table-row-group
+    }
+}
+
+/* dynamic view menu (Read, Edit, History) */
+@media only screen and (max-width: 500px) {
+    #p-views-label {
+        display: block !important;
+        font-size: 0.8em !important;
+        padding-left: 0.7em !important;
+        padding-top: 1.375em !important;
+        margin-right: 20px !important;
+        font-weight: normal !important;
+        color: #4d4d4d !important;
+    }
+
+    #p-views-label:after {
+        vertical-align: middle !important;
+        content: url(/skins/Vector/images/arrow-down-icon.png) !important;
+    }
+
+    .vectorTabs {
+        direction: ltr !important;
+        cursor: pointer !important;
+        position: relative !important;
+        text-align: left !important;
+    }
+
+    #p-views ul {
+        display: none;
+        float: none !important;
+        height: initial !important;
+    }
+
+    #p-views li {
+        background-color: white !important;
+        width: 100% !important;
+        float: none !important;
+        height: initial !important;
+    }
+
+    #p-views span {
+        width: 100% !important;
+    }
+
+    #p-views:hover ul {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* semi hide all edit options   */
+    #p-cactions-label,
+    #p-views-label {
+        margin: 0 !important;
+        /* max-width:1em !important; max-height: 1em !important;*/
+    }
+
+    #p-personal,
+    #right-navigation,
+    #left-navigation {
+        font-size: small !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* toc */
+    .toc li {
+        display: inline;
+        border: 1px solid #000;
+        white-space: nowrap;
+        padding: 5px;
+        line-height: 30px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAIAAADITs03AAAAPElEQVR4XuWK2xEAIAzCsPvv5DSu0ahX3yv4wQVyGGCSvg2dnJvduT8sz/IwKOIfjCi2z/76FhHeJcslVZQFLUC06LZ/AAAAAElFTkSuQmCC);
+        background-position: bottom left;
+        background-repeat: repeat-x
+    }
+
+    #toctitle,
+    .toc,
+    .tocnumber,
+    .toclevel-2,
+    .toclevel-3,
+    .toclevel-1 ul {
+        display: none !important;
+    }
+
+    /* hide contribute */
+    .bigdisplay {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 633px) {
+
+    /* hide left nav options */
+    #left-navigation {
+        display: none !important;
+    }
+
+    /* summary 100% width */
+    .floatright,
+    .tablecanyon,
+    .tableregion,
+    .kmlmapdisplay {
+        float: none !important;
+    }
+
+    .floatright,
+    .tablecanyon,
+    .tableregion {
+        margin: auto !important;
+        margin-bottom: 22px !important;
+    }
+
+    .kmldisplay {
+        display: inline;
+        float: none !important;
+        padding-right: 2px !important;
+        margin: 0px !important;
+    }
+
+    #loctable,
+    .tablemobile,
+    .overflow-picture {
+        overflow: auto;
+    }
+
+    #loctable:focus {
+        outline: .1em solid rgba(0, 0, 0, .1);
+    }
+
+    li.gallerybox {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* centers images on mobile while still allowing them to scale down */
+
+    tr.conditions-comment div {
+        padding: 1vw;
+        padding-left: 2vw;
+        max-width: 86vw;
+        position: sticky;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .kmlmapdisplay {
+        height: 300px !important;
+    }
+
+    #content {
+        padding: 0.5em !important;
+    }
+}

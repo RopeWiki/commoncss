@@ -1,0 +1,123 @@
+/* This is imported by MediaWiki:Common.css */
+
+.starRate {
+    position: relative;
+    margin-top: 6px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+
+.starRate .starRate0 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(/skins/common/images/GoldStar0.png) left top;
+}
+
+.starRate .starRate1 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(/skins/common/images/GoldStar1.png) left top;
+}
+
+.starRate .starRate2 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(/skins/common/images/GoldStar2.png) left top;
+}
+
+.starRate .starRate3 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(/skins/common/images/GoldStar3.png) left top;
+}
+
+.starRate .starRate4 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(/skins/common/images/GoldStar4.png) left top;
+}
+
+.starRate b:hover {
+    background: url(/skins/common/images/RedStar.png) left top;
+}
+
+.starText {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.starRate b:hover .starText {
+    display: inline-block;
+}
+
+.starRate p {
+    display: flex;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.starRate .autoedit .autoedit-trigger {
+    display: inline;
+}
+
+.starRate .autoedit .autoedit-result {
+    display: none;
+}
+
+
+.starsub {
+    font-size: 60%;
+    vertical-align: sub;
+}
+
+.starvText {
+    font-size: 12px;
+}
+
+
+.starx {
+    font-size: 14px !important
+}
+
+.starx b:hover .starText {
+    left: 0;
+    top: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.starRatingUserCell {
+    white-space: nowrap;
+    display: flex;
+}
+
+.starRatingUser {
+    max-width: 160px;
+    overflow: hidden;
+}
+
+th.star-rating {
+    font-family: sans-serif;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: right !important;
+    padding-right: 4.5px;
+    padding-top: 4px;
+}
+
+.tablestars {
+    white-space: nowrap;
+}
+
+.starv {
+    padding-left: 14px !important;
+}

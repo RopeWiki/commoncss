@@ -27,3 +27,24 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+#waterflowdiv img {
+    margin-right: 5px;
+}
+
+.waterflow-location {
+    display: inline;
+    white-space: nowrap;
+}
+
+.waterflow-explanation {
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.waterflow-sitedescription {
+    white-space: nowrap;
+    max-width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

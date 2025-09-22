@@ -72,3 +72,7 @@
 .modal-comment-header {
     vertical-align: top;
 }
+
+#modal-userdate {
+    width: 120px;
+}

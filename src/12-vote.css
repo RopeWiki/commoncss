@@ -1,0 +1,62 @@
+/* This is imported by MediaWiki:Common.css */
+
+span.voted,
+span.notvoted {
+    bottom: 5px;
+    position: relative;
+}
+
+.votebutton {
+    position: relative;
+    display: inline-block;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+    line-height: normal;
+}
+
+.votebutton button {
+    font-size: 0px !important;
+    background: url(/skins/common/images/RedStar.png) center right no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.votebutton.hasrated {
+    background-image: url("/images/c/cb/Hasrated.png");
+    width: 24px;
+    height: 18px;
+    bottom: -4px;
+}
+
+.votebutton.hasnotrated {
+    background-image: url("/images/1/15/Needstorate.png");
+    width: 30px;
+    height: 18px;
+    bottom: -5px;
+}
+
+.votebutton.hasnotrated button {
+    background: none;
+    border-style: none;
+    box-shadow: none;
+    width: 30px;
+    height: 20px;
+}
+
+.voted * {
+    color: #22aa22 !important;
+}
+
+.votedrow {
+    background-color: #abe0ab;
+}
+
+.votedsub .starsub {
+    color: #22ca22;
+    font-weight: bold;
+    font-size: 80%;
+}
+
