@@ -72,3 +72,10 @@ img.thumbimage {
 #picturesdiv img {
     margin-left: -6px;
 }
+
+/* avoid image being bigger than 100% width */
+.gallerybox,
+.thumb {
+    max-width: 100% !important;
+    height: auto !important;
+}

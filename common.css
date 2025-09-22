@@ -15,3 +15,16 @@ To build the final common.css, run: python3 build.py
 
 @import url("/MediaWiki:Common-00-original.css?action=raw&ctype=text/css");
 @import url("/MediaWiki:Common-01-breadcrumbs.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-02-maps.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-03-waterflow.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-04-pdf.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-05-weather.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-06-google-translate.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-07-modal.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-08-permits.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-09-messages.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-10-reactive.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-11-star.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-12-vote.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-13-conditions.css?action=raw&ctype=text/css");
+@import url("/MediaWiki:Common-14-images.css?action=raw&ctype=text/css");

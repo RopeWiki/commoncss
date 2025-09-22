@@ -857,9 +857,6 @@ img.pops {
     display: none;
 }
 
-
-
-
 /* smiley */
 #cs0 {
     background-image: url("/images/d/d9/Smiley0.png");
@@ -1492,7 +1489,6 @@ tr.spaceUnder>td {
     cursor: pointer;
 }
 
-
 /* style links like buttons */
 .button-link {
     -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
@@ -1558,12 +1554,7 @@ span.understate {
 
 /* rules that only apply for small screen to improve UI on mobile */
 
-/* avoid image being bigger than 100% width */
-.gallerybox,
-.thumb {
-    max-width: 100% !important;
-    height: auto !important;
-}
+
 
 iframe,
 .embedvideo {
@@ -1601,7 +1592,6 @@ div.tabArea {
     top: 3px;
     z-index: 100;
 }
-
 
 .tabArea a:hover {
     border-color: #c0c0c0 #808080 #808080 #c0c0c0;
