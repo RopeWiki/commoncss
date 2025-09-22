@@ -17,7 +17,8 @@ ul.breadcrumb-trail {
   margin: revert !important;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
   align-items: center;
   font-size: 0.9em;
   font-style: italic;
@@ -25,7 +26,8 @@ ul.breadcrumb-trail {
   white-space: nowrap;
   /* Reset direction back to normal */
   direction: ltr;
-  min-width: max-content; /* Ensure full width for scrolling */
+  min-width: max-content;
+  /* Ensure full width for scrolling */
 }
 
 /* Make list items display inline */
@@ -34,7 +36,8 @@ ul.breadcrumb-trail li {
   display: inline-flex;
   align-items: center;
   padding: 0;
-  flex-shrink: 0; /* Prevent items from shrinking */
+  flex-shrink: 0;
+  /* Prevent items from shrinking */
   white-space: nowrap;
 }
 

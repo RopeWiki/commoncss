@@ -1,0 +1,97 @@
+/* This is imported by MediaWiki:Common.css */
+
+/* this sets the style of the canyon header bar, based on permit status */
+.permit {
+    background-color: #a7d7f9;
+    color: #0645ad;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.permit a {
+    padding-left: 8px;
+}
+
+/* same as default style (.permit) */
+.permit.Yes {
+    background-color: #edea34;
+}
+
+.permit.Restricted {
+    background-color: #f7a94a;
+}
+
+.permit.Closed,
+.permit.Closed a {
+    background-color: #ed3434;
+    color: #e6eff5;
+}
+
+.permit.unexplored {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.permit big {
+    margin: auto;
+    display: block;
+    width: 240px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.permiticon {
+    width: 18px;
+    vertical-align: sub;
+    margin-left: -3px;
+}
+
+.permit-ul {
+    text-decoration-thickness: 4px;
+    text-decoration-skip-ink: none;
+    text-decoration-skip: none;
+}
+
+.permit-ul.No {
+    text-decoration: none;
+}
+
+.permit-ul.Yes {
+    text-decoration-color: #edea34;
+}
+
+.permit-ul.Restricted {
+    text-decoration-color: #f7a94a;
+}
+
+.permit-ul.Closed {
+    text-decoration-color: #ed3434;
+}
+
+#firstHeading.Permit.Yes::before {
+    background-image: url(/images/2/29/Permit-yes.png);
+}
+
+#firstHeading.Permit.Restricted::before {
+    background-image: url(/images/1/11/Permit-restricted.png);
+}
+
+#firstHeading.Permit.Closed::before {
+    background-image: url(/images/f/f8/Permit-closed.png);
+}
+
+#firstHeading.Permit.Yes::after {
+    background-color: #edea34;
+}
+
+#firstHeading.Permit.Restricted::after {
+    background-color: #f7a94a;
+}
+
+#firstHeading.Permit.Closed::after {
+    background-color: #ed3434;
+}

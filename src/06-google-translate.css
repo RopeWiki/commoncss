@@ -1,0 +1,42 @@
+/* This is imported by MediaWiki:Common.css */
+/* translation autohide */
+#google_translate_flags {
+    float: right;
+    margin-left: 40px;
+}
+
+#google_translate_flags table {
+    position: relative;
+}
+
+#google_translate_flags img {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+}
+
+#google_translate_element {
+    display: none;
+}
+
+#google_translate_flags:hover #google_translate_element {
+    display: table-cell;
+    position: relative;
+    bottom: 8px;
+    right: 44px;
+}
+
+/* avoid google translate tooltips */
+.goog-tooltip {
+    display: none !important;
+}
+
+.goog-tooltip:hover {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}

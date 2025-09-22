@@ -1,0 +1,73 @@
+/* This is imported by MediaWiki:Common.css */
+/* inline weather */
+.wst {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+th.wstheader {
+    font-size: 10px;
+}
+
+.wstheader.units {
+    position: relative;
+    right: 4px;
+}
+
+.wstheader.weekend {
+    background-color: #d4d4d4 !important;
+}
+
+.wstheader a {
+    position: relative;
+    line-height: 1.0;
+    font-size: 100%;
+    padding: 0
+}
+
+.wstheader.units {
+    position: relative;
+    right: 4px;
+}
+
+.wstlogo {
+    content: url("/images/f/f2/OpenWeatherLogo.png");
+    position: absolute;
+    width: 50px;
+    left: -55px;
+    top: 42px;
+}
+
+.weatherh {
+    font-size: 11px;
+    line-height: 1.0;
+    padding: 0;
+    text-align: center;
+    color: red;
+}
+
+.weatherl {
+    font-size: 11px;
+    line-height: 1.0;
+    padding: 0;
+    text-align: center;
+    color: blue;
+}
+
+.weatherimg {
+    min-width: 22px;
+    height: 22px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-color: #C1DDFA;
+}
+
+.weatheralert {
+    color: red;
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 10px;
+    padding: 0
+}

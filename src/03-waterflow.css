@@ -1,0 +1,29 @@
+/* This is imported by MediaWiki:Common.css */
+#waterflow-table th {
+    vertical-align: middle;
+}
+
+.waterflow-table-th-datacolumn {
+    vertical-align: top !important;
+}
+
+.waterflow-table-column-outlined {
+    border: 4px solid #0051899c;
+}
+
+.waterflow-location {
+    display: inline;
+    white-space: nowrap;
+}
+
+.waterflow-explanation {
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.waterflow-sitedescription {
+    white-space: nowrap;
+    max-width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

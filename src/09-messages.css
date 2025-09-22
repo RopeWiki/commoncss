@@ -1,0 +1,111 @@
+/* This is imported by MediaWiki:Common.css */
+
+.rwwarning * {
+    background-color: yellow;
+}
+
+.rwwarningbox {
+    background-color: yellow;
+    border: 1px solid #808080;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.rwwarningbox.shadowed {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.message-box {
+    box-sizing: border-box;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+table.message-box {
+    box-sizing: border-box;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+table.message-box td:first-child {
+    white-space: nowrap;
+}
+
+
+table.message-box td:last-child {
+    padding-left: 0.5em;
+    vertical-align: top;
+}
+
+table.message-box td:first-child span::before {
+    position: relative;
+    top: -2px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.3em;
+}
+
+.alert-message {
+    background-color: var(--background-color-error-subtle, #ffe9e5);
+    color: var(--color-base, #202122);
+    border: 1px var(--border-color-error, #9f3526) solid;
+}
+
+table.alert-message {
+    border: 1px solid #9f3526;
+    background-color: #ffe9e5;
+    color: #202122;
+}
+
+table.alert-message td:first-child span::before {
+    background-image: url("/images/c/cb/Warning.png");
+}
+
+
+.warning-message {
+    background-color: var(--background-color-error-subtle, #fff9e5);
+    color: var(--color-base, #202122);
+    border: 1px var(--border-color-error, #9f8a26) solid;
+}
+
+table.warning-message {
+    border: 1px solid #9f8a26;
+    background-color: #fff9e5;
+    color: #202122;
+}
+
+table.warning-message td:first-child span::before {
+    background-image: url("/images/2/2d/Warning_orange.png");
+}
+
+.info-message {
+    background-color: var(--background-color-error-subtle, #f0f5e1);
+    color: var(--color-base, #202122);
+    border: 1px var(--border-color-error, #556b2f) solid;
+}
+
+table.info-message {
+    border: 1px solid #556b2f;
+    background-color: #f0f5e1;
+    color: #202122;
+}
+
+table.info-message td:first-child span::before {
+    background-image: url("/images/b/b3/Info.png");
+}
+
+table.pnw-message td:first-child span::before {
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/a/ae/Pnw_120.png");
+}
+
+.anchor-note {
+    background-color: aliceblue;
+}

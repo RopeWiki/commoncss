@@ -1,0 +1,34 @@
+/* This is imported by MediaWiki:Common.css */
+
+/* pdf download */
+
+#pdfselect::-ms-expand {
+    display: none !important;
+}
+
+#pdfselect {
+    width: 27px;
+    height: 32px;
+    position: relative;
+    vertical-align: bottom;
+    bottom: 6px;
+    margin-left: 6px;
+    background-image: url("/images/a/ad/DownIcon.png");
+    background-color: transparent;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border: none !important;
+}
+
+#pdfselect:hover {
+    background-color: #ebebeb;
+}
+
+#pdfselect option {
+    color: initial !important;
+    background-color: initial !important;
+}
+
+#pdfselect option:first-child {
+    font-weight: bold;
+}
