@@ -6,27 +6,46 @@ Script to upload CSS files to MediaWiki pages.
 - Uploads main common.css to MediaWiki:Common.css
 
 Requires 3 envvars:
-  MEDIAWIKI_SITE_URL
+  MEDIAWIKI_SITE_URL (or use --prod flag for https://ropewiki.com)
   MEDIAWIKI_USERNAME
   MEDIAWIKI_PASSWORD
 
-Requires the `mwclient` pip package.
+Requires the `mwclient` and `python-dotenv` pip packages.
+
+Usage:
+  ./upload.py           # Upload to site specified in .env
+  ./upload.py --prod    # Upload to production (ropewiki.com)
 '''
 
 import mwclient
 import os
 import sys
 import glob
+from dotenv import load_dotenv
 
-site_url, username, password = (
+load_dotenv()
+
+# Check for --prod flag
+if '--prod' in sys.argv:
+    site_url = 'https://ropewiki.com'
+    print("🚀 Production mode: uploading to ropewiki.com")
+else:
+    site_url = os.getenv("MEDIAWIKI_SITE_URL")
+
+username, password = (
     os.getenv(var)
-    for var in ["MEDIAWIKI_SITE_URL", "MEDIAWIKI_USERNAME", "MEDIAWIKI_PASSWORD"]
+    for var in ["MEDIAWIKI_USERNAME", "MEDIAWIKI_PASSWORD"]
 )
 
 if not all([site_url, username, password]):
     sys.exit(
         "Error: Ensure MEDIAWIKI_SITE_URL, MEDIAWIKI_USERNAME, and MEDIAWIKI_PASSWORD are all set."
     )
+
+print(f"Target: {site_url}")
+
+# Strip protocol from URL if present
+site_url = site_url.replace("https://", "").replace("http://", "")
 
 site = mwclient.Site(site_url, path="/")
 site.login(username, password)
