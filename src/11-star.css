@@ -7,43 +7,37 @@
     white-space: nowrap;
 }
 
-.starRate .starRate0 {
+.starRate0, .starRate1, .starRate2, .starRate3, .starRate4 {
     width: 16px;
     height: 16px;
     float: left;
-    background: url(/skins/common/images/GoldStar0.png) left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.starRate .starRate0 {
+    background-image: url(/images/9/9d/GoldStar0.png);
 }
 
 .starRate .starRate1 {
-    width: 16px;
-    height: 16px;
-    float: left;
-    background: url(/skins/common/images/GoldStar1.png) left top;
+    background-image: url(/images/8/86/GoldStar1.png);
 }
 
 .starRate .starRate2 {
-    width: 16px;
-    height: 16px;
-    float: left;
-    background: url(/skins/common/images/GoldStar2.png) left top;
+    background-image: url(/images/f/fd/GoldStar2.png);
 }
 
 .starRate .starRate3 {
-    width: 16px;
-    height: 16px;
-    float: left;
-    background: url(/skins/common/images/GoldStar3.png) left top;
+    background-image: url(/images/8/8d/GoldStar3.png);
 }
 
 .starRate .starRate4 {
-    width: 16px;
-    height: 16px;
-    float: left;
-    background: url(/skins/common/images/GoldStar4.png) left top;
+    background-image: url(/images/4/41/GoldStar4.png);
 }
 
 .starRate b:hover {
-    background: url(/skins/common/images/RedStar.png) left top;
+    background: url(/images/5/5e/VoteButton.png) left top;
 }
 
 .starText {
