@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.mapmenu {
+    margin-bottom: 2em;
+}
+
 
 /* styles for map legend & tooltip */
 /* #mapsidebar { width:auto;height:auto;position:absolute;left:0;top:0;display:none; } */

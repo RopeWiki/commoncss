@@ -13,20 +13,50 @@ Requires 3 envvars:
 Requires the `mwclient` and `python-dotenv` pip packages.
 
 Usage:
-  ./upload.py           # Upload to site specified in .env
-  ./upload.py --prod    # Upload to production (ropewiki.com)
+  ./upload.py                      # Upload to site specified in .env
+  ./upload.py --prod               # Upload to production (ropewiki.com)
+  ./upload.py --delete-unexpected  # Delete unexpected MediaWiki:Common... pages
+  ./upload.py --help               # Show help message
 '''
 
 import mwclient
 import os
 import sys
 import glob
+import argparse
 from dotenv import load_dotenv
+
+def parse_args():
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(
+        description='Upload CSS files to MediaWiki pages',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog='''
+Examples:
+  %(prog)s                      Upload to site specified in .env
+  %(prog)s --prod               Upload to production (ropewiki.com)
+  %(prog)s --delete-unexpected  Delete unexpected MediaWiki:Common... pages
+        '''
+    )
+    parser.add_argument(
+        '--prod',
+        action='store_true',
+        help='Upload to production (ropewiki.com) instead of dev site'
+    )
+    parser.add_argument(
+        '--delete-unexpected',
+        action='store_true',
+        help='Delete unexpected MediaWiki:Common... pages (use with caution!)'
+    )
+    return parser.parse_args()
+
+# Parse arguments
+args = parse_args()
 
 load_dotenv()
 
 # Check for --prod flag
-if '--prod' in sys.argv:
+if args.prod:
     site_url = 'https://ropewiki.com'
     print("🚀 Production mode: uploading to ropewiki.com")
 else:
@@ -64,8 +94,12 @@ def upload_file(file_path, page_name, edit_summary="build sync"):
         print(f"✗ Failed to upload {file_path} to {page_name}: {e}")
         return False
 
-def check_for_unexpected_common_pages():
-    """Check for MediaWiki:Common... pages that aren't part of this build process"""
+def check_for_unexpected_common_pages(delete_unexpected=False):
+    """Check for MediaWiki:Common... pages that aren't part of this build process
+
+    Args:
+        delete_unexpected: If True, delete unexpected pages (default: False)
+    """
     print("Checking for unexpected MediaWiki:Common... pages...")
 
     # Get expected pages based on current build
@@ -100,10 +134,28 @@ def check_for_unexpected_common_pages():
 
         if unexpected_pages:
             print(f"⚠️  WARNING: Found {len(unexpected_pages)} unexpected MediaWiki:Common... page(s):")
-            for page in sorted(unexpected_pages):
-                print(f"   - {page}")
-            print("   These pages may be orphaned or not part of the current build process.")
-            return False
+            for page_name in sorted(unexpected_pages):
+                print(f"   - {page_name}")
+
+            if delete_unexpected:
+                print()
+                print("🗑️  Deleting unexpected pages...")
+                deleted_count = 0
+                for page_name in sorted(unexpected_pages):
+                    try:
+                        page = site.pages[page_name]
+                        page.delete(reason="Orphaned page - not part of current build process")
+                        print(f"   ✓ Deleted: {page_name}")
+                        deleted_count += 1
+                    except Exception as e:
+                        print(f"   ✗ Failed to delete {page_name}: {e}")
+
+                print(f"\n✓ Deleted {deleted_count}/{len(unexpected_pages)} unexpected pages")
+                return True
+            else:
+                print("   These pages may be orphaned or not part of the current build process.")
+                print("   Use --delete-unexpected flag to remove them.")
+                return False
         else:
             print("✓ No unexpected MediaWiki:Common... pages found")
             return True
@@ -139,11 +191,10 @@ def main():
 
     # Check for unexpected Common pages after upload
     print()  # Add spacing
-    check_result = check_for_unexpected_common_pages()
+    check_result = check_for_unexpected_common_pages(delete_unexpected=args.delete_unexpected)
 
-    if not check_result:
+    if not check_result and not args.delete_unexpected:
         print("\n⚠️  WARNING: Unexpected MediaWiki:Common... pages were found (see above)")
-        print("   Consider reviewing and cleaning up these pages if they're no longer needed.")
 
 if __name__ == "__main__":
     main()
