@@ -1339,14 +1339,6 @@ li.collapsibleListClosed {
     white-space: initial;
 }
 
-.SpeleosphereTitle:after {
-    content: url("/images/d/dd/SpeleosphereTitle.png");
-}
-
-.SpeleosphereLogo:after {
-    content: url("/images/a/ae/SpeleosphereLogo.png");
-}
-
 .tablecanyon {
     width: 310px;
     font-size: 90%;
