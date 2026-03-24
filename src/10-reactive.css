@@ -109,7 +109,8 @@ See https://github.com/RopeWiki/commoncss */
 
 /* dynamic view menu (Read, Edit, History) */
 @media only screen and (max-width: 500px) {
-    #p-views-label {
+    #p-views-label,
+    #p-cactions-label {
         display: block !important;
         font-size: 0.8em !important;
         padding-left: 0.7em !important;
@@ -135,6 +136,12 @@ See https://github.com/RopeWiki/commoncss */
         display: none;
         float: none !important;
         height: initial !important;
+        background-color: white !important;
+        border: 1px solid #a2a9b1 !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        position: absolute !important;
+        z-index: 100 !important;
+        margin-top: 0 !important;
     }
 
     #p-views li {
@@ -142,13 +149,33 @@ See https://github.com/RopeWiki/commoncss */
         width: 100% !important;
         float: none !important;
         height: initial !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    #p-views li:last-child {
+        border-bottom: none !important;
+    }
+
+    #p-views li:hover {
+        background-color: #f8f9fa !important;
     }
 
     #p-views span {
         width: 100% !important;
+        display: block !important;
+        padding: 0.0em 1em !important;
     }
 
-    #p-views:hover ul {
+    /* Show menu on hover OR active (for touch) OR when focused within */
+    #p-views:hover ul,
+    #p-views:active ul,
+    #p-views:focus-within ul {
+        display: block !important;
+    }
+
+    /* Keep menu visible while interacting with it */
+    #p-views ul:hover,
+    #p-views ul:active {
         display: block !important;
     }
 
