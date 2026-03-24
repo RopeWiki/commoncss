@@ -10,7 +10,10 @@ import glob
 
 def ensure_header_comment(file_path):
     """Ensure the file starts with the required MediaWiki comment"""
-    required_header = "/* This is imported by MediaWiki:Common.css */"
+    required_header = """/* This is imported by MediaWiki:Common.css
+Manual edits will be overwritten.
+See https://github.com/RopeWiki/commoncss */
+"""
 
     # Read the current file content
     with open(file_path, 'r', encoding='utf-8') as f:

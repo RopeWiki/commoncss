@@ -1,4 +1,6 @@
-/* This is imported by MediaWiki:Common.css */
+/* This is imported by MediaWiki:Common.css
+Manual edits will be overwritten.
+See https://github.com/RopeWiki/commoncss */
 
 .rwwarning * {
     background-color: yellow;

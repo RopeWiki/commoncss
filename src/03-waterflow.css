@@ -1,4 +1,7 @@
-/* This is imported by MediaWiki:Common.css */
+/* This is imported by MediaWiki:Common.css
+Manual edits will be overwritten.
+See https://github.com/RopeWiki/commoncss */
+
 #waterflow-table th {
     vertical-align: middle;
 }
