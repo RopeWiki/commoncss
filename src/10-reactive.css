@@ -160,10 +160,12 @@ See https://github.com/RopeWiki/commoncss */
         background-color: #f8f9fa !important;
     }
 
-    #p-views span {
+    #p-views span,
+    #p-cactions span {
         width: 100% !important;
         display: block !important;
-        padding: 0.0em 1em !important;
+        padding: 0.2em 1em !important;
+        font-size: 1.1em !important;
     }
 
     /* Show menu on hover OR active (for touch) OR when focused within */
