@@ -342,6 +342,7 @@ input::-webkit-datetime-edit {
 
 .srf-slideshow .slideshow-nav-readout {
     top: -0.1em;
+    left: 0;
 }
 
 .srf-slideshow {
@@ -357,8 +358,8 @@ input::-webkit-datetime-edit {
     border: 1px solid #aaa;
     border-radius: 3px;
     background: #f1f2ff;
-    margin-top: -11px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 1.6em;
     margin-right: 1.6em;
 }
@@ -369,6 +370,10 @@ a.ui-slider-handle.ui-state-default.ui-corner-all {
     top: -5px;
     line-height: 19px;
     padding: 0px;
+    border-radius: 4px;
+}
+
+.srf-slideshow .slideshow-nav-wrapper .ui-button-icon-only {
     border-radius: 4px;
 }
 
