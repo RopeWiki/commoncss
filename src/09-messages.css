@@ -110,4 +110,5 @@ table.pnw-message td:first-child span::before {
 
 .anchor-note {
     background-color: aliceblue;
+    display: inline-block;
 }
