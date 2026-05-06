@@ -11,9 +11,11 @@ html {
     /* Prevent font scaling in iOS condition reports and landscape mode, while allowing user zoom */
 }
 
-p:has(+ .wikitable) {
+/* Unclear why this exists, but it makes any text placed immediately before a wikitable to silently disappear */
+
+/* p:has(+ .wikitable) {
     display: none;
-}
+} */
 
 /* fixes extra <br> added by ask / template reported here: phabricator.wikimedia.org/T60991 */
 
