@@ -1699,3 +1699,7 @@ div.popupform-anchor,
 .incident-highlight-Yes {
     background-color: #f6b26b;
 }
+
+.converted-rating {
+    font-style: italic;
+}
